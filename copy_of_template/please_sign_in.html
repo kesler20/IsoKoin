@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Error Page{% endblock %}
+{% block content %}
+<div class="bg-primary" id="particles-js">
+    <div class="alert-error">
+        <h1>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p>{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </h1>
+    </div>
+</div>
+{% endblock %}

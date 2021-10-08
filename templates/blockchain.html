@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title %}Blockchains Page{% endblock %}
+{% block content %}
+    <div class="loader">
+        <div>
+            <img class="barrell" src="{{ url_for('static', filename='img/R.png')}}" alt="barrell" srcset="">
+            <img class="mining" src="{{ url_for('static', filename='img/R1.png')}}" alt="mining" srcset="">
+            <p>building the chain ...</p>
+        </div>
+    </div>
+    <!---Head area -->
+    <section class="features-head bg-primary py-3"> <!---we can use the utility classes on other pages as well-->
+        <div class="container grid">
+            <div class='text'>
+                <h1 class="xl">Blockchain</h1>
+                <p class="lead">Check out the blockchain workflow demostration on the ISK platform</p>
+            </div>
+            <img src="{{ url_for('static', filename='img/server.png') }}" alt="image of a server">
+        </div>
+    </section>
+
+    <!---Sub Head-->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">The ISK Platform</h1>
+                <p>the ISK platform or IsoKoin platform is the blockchain where IsoKoins are currently running on untill the decentralised 
+                    application powered by ISKs will be deployed in the Ethereum blockchain.</p>
+            </div>
+            <img src="{{ url_for('static', filename='img/server2.png') }}" alt="another image of a server">
+        </div>
+    </section>
+    
+    <!---Features Main-->
+    <section class="features-main my-2">
+        <div class="container grid blockchain">
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: {{_hash}}</p>
+                <p>Nonse: 0</p>
+                <p>Previous Hash: None</p>
+                <p>Time: {{timestamp}}</p>
+                <a href="{{ url_for('static', filename='../view_transactions') }}" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i><!---for viewing the transactions oben up a preview of the transactions by passing the {{transactions}} variable-->
+            </div><!--THIS-->
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+        </div>
+    </section>
+    <!--- Other interesting icons include fas fa-power-off fa-3x where fa-3x refers to the font awesome size there are also fa-upload and fa-laptop-code-->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Mine new blocks</h1>
+                <p>New blocks are mined in the same way that blocks in other
+                    blockchains such as the Bitcoin blockchain are mined. This involves 
+                    implementing an hashing algorithm that attempts to find a hash with pre-specified requirements</p>
+                <form action="#" method="post"><input id='mine' class="btn btn-outline" type='submit' value='Mine'/></form>
+            </div>
+            <img id="mining-icon" src="{{ url_for('static', filename='img/download.jpg') }}" alt="mining icon">
+        </div>
+    </section>
+
+{% endblock %}
+{{transactions}}

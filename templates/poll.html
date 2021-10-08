@@ -1,0 +1,106 @@
+{% extends 'base.html' %} 
+{% block title %}Case Study Page{% endblock %} 
+{% block content %}
+
+    <div class="animation-area">
+        <section class="use-case-head bg-primary py-3">        
+            <div class="container flex">
+                <div>
+                    <h1 class='xl'>Vote for a use case</h2>
+                    <p>The following sections describe various possible use cases for the IsoKoin cryptocurrency.</p>
+                    <p>Through this page you will be able to vote which use case you would prefer and leave a comment on the project;</p> 
+                    <p>more info on comments are listed within the last section</p>
+                </div>
+            </div>
+        </section>
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <section class="use-case-main bg-dark exchange py-4">
+        <div class="container grid">
+            <div><img class='defi' src="{{ url_for('static', filename='img/defi.jpg') }}" alt="image of chairty" srcset=""></div>
+            <div>
+                <h2>Decentralised Exchange</h2>
+                <p>One of the use cases of this cryptocurrency could be to decentralise the exchange of any assets,</p>
+                <p> From cars to phones and stocks as well as engineered instruments that users will be able to create if there are enough nodes interested in trading it.
+                the Dapp would be installed as a mobile or desktop application and the users will be use it as an hybrid of ebay and trading212.</p> 
+                <p>The order matching system will implement
+                a cutting edge algorithm to ensure that enough liquidity is provided and liquidity and loiquidity proividers will be rewarded with Isokoins as they will play the roles of miners</p>
+                <a href="./decentralised-exchange" class="btn btn-outline">Vote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-case-main bg-light pharma py-4">
+        <div class="container grid">
+            <div>
+                <h2>Tackling Big Pharma</h2>
+                <p>Another use case of Isokoins could be to implement a decentralised network that keep tracks of patents of pharmaceutical products and drugs as well as how much they are valued</p>
+                <a href="./big-pharma" class="btn btn-outline">Vote</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/OIP.jpg') }}" alt="image of chairty" srcset="">
+            </div>
+        </div>
+    </section>
+    <img class="image-divider" src="{{ url_for('static', filename='img/cool-background.png') }}" alt="cool background" srcset="">
+    <section class="use-case-main bg-light charity py-4">
+        <div class="container grid">
+            <div>
+                <img src="{{ url_for('static', filename='img/charity.jpg') }}" alt="image of chairty" srcset="">
+            </div>
+            <div>
+                <h2>Trustless Charity</h2>
+                <p>The technology could be used to decentralise funding of charitable operations that involves tracking the supplychain of the goods donated, providing lower costs of donations 
+                    that will allow charitable eandavours to be funded more effectively, this is because less money will go into bank fees, exchange rates fees etc..</p>
+                <a href="./charity" class="btn btn-outline">Vote</a>
+            </div>
+        </div>
+    </section>   
+
+    <section class="use-case-main bg-light democracy py-5">
+        <div class="container grid">
+            <div>
+                <h2>Fighting Corruption</h2>
+                <p>By making policies, electorial system and other things decentralised we aim to
+                     remove trust in numerous political endeavours by making political operations more reliable and secure and
+                      helping countries such as Nigeria to transition from an hybrid democracy to a more robust democracy. this can be achived by
+                       implmenting blockchain technology for safer votes handling and policies approval</p>
+                <a href="./corruption" class="btn btn-outline">Vote</a>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/democracy.png') }}" alt="image of a democracy" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <section class="use-case-comment feedback bg-dark py-5">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Please leave a comment</h1>
+                <p>You can use this form to:</p>
+                <ul>
+                    <li>- Express your opininon on the UI of the platform</li>
+                    <li>- Suggest any improvements or elaborate on why you decided to vote for the selected cause</li>
+                    <li>- Suggest any other use case that you deem blockchain technology to be a good fit for</li>
+                </ul>
+            </div>
+            <form class="use-case-comment" action="" method='post' class="card flex">
+                <input class='feedback-comment' name='comment' type="text" value='Please leave your comment here..'>
+            </form>
+            <a href="../poll" class="btn btn-outline">Send</a>
+        </div>
+
+
+    </section>
+{% endblock %}
+
+<!-- then there is also against big pharma and the decentralised network
+make some of the solidity code sample
+write the white paper assuming that the decentralised exchange will be used-->

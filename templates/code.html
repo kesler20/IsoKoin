@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %}Source Code{% endblock %}
+{% block content %}
+<section class="how-it-works bg-light py-3">
+    <div class="container grid">
+        <div>
+            <img src="{{ url_for('static', filename='img/decentralised-tree.jpg') }}" alt="" srcset="">
+        </div>
+        <div>
+            <h2>What is a blockchain?</h2>
+            <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography. 
+                Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally represented as a Merkle tree). 
+                The timestamp proves that the transaction data existed when the block was published in order to get into its hash. 
+                As blocks each contain information about the block previous to it, they form a chain
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-head bg-primary py-3">
+    <div class="container grid">
+        <div></div>
+        <div>
+            <h2>Blockchain Feature</h2>
+            <p>This website uses a fake blockchain that was buolt for testing the smart contracts. 
+                Hoverver, this feature can be used for educational purposes as it allows the users to go through the entire 
+                workflow of making a transaction using smart constracts mining the pending transactions and view your transaction stored in a block. 
+                This will help he users to better understand the technology</p>
+            <a href="#workflow" class="btn btn-outline">View Workflow</a>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-main bg-primary py-3">
+    <div class="container grid">
+        <div>
+            <h2>How it works</h2>
+            <p>The following section shows how to users will be able to trade through smart contracts. 
+                The token implemented follows the ERC20 standard and is programmed in solidity in order to run in the ethereum blockchain</p>
+            <a href="" class="btn btn-outline">Run</a>
+        </div>
+    </div>
+</section>
+
+<div class="workflow-container" id='workflow'>
+    <div class="workflow">
+      <ul>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">Step 1</h3>
+            <h1>Sign in</h1>
+            <p>Request an account in order to create a node and access all the functionality provided by the ISK platform</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">Step 2</h3>
+            <h1>Check Balance</h1>
+            <p>Go to the Account Page in order to check yoiur balance and send ISKs to other users within the platform</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">Step 3</h3>
+            <h1>Mine Transactions</h1>
+            <p>Mine the pending transactions within the ISK blockchain and check if a new block has been added to the blockhcain the Blockchain Page</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">Step 4</h3>
+            <h1>Check Block</h1>
+            <p>You can check if your specific block has been mined as it will appear to have been created the same time you mined it and if you inspect its contents by
+                clicking view transactions you will be able your to see your specific transaction</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

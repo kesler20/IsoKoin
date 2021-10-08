@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}Error Page{% endblock %}
+{% block content %}
+<div class="bg-primary" id="particles-js">
+    <div class="alert-error">
+        <h1>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p>{{msg}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </h1>
+    </div>
+
+    <section class="user-main">
+        <div class="container container-flex">
+            <h1>Username</h1>
+            <div>
+
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Impedit praesentium nesciunt eos, mollitia suscipit laborum qui quos maxime modi. 
+                Odit tempora soluta maxime omnis, quos excepturi facilis totam laborum fugiat!</p>
+        </div>
+    </section>
+
+    <form action="#" method="get">
+        <h3>Account Summay</h3>
+        <h1><input type="text" value="{{ balance }}"/></h1>
+        <hr/>
+        <input type="text" value="{{ public_key }}"/>
+        <hr/>
+        <input type="text" value="{{ username }}"/>
+        <hr/>
+        <input type="text" value="{{ transactions }}"/>
+        <hr/>
+    </form>
+
+    <form action="{{ url_for('accounts') }}" method="post" >
+        <p><input type="text" name='receiver'></p>
+        <p><input type="number" name='amt'></p>
+        <p><input type="submit" value='submit'></p>
+    </form>
+    <hr/>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <hr/>
+    <h3>Transaction Summary:</h3>
+    {{summary}}
+</div>
+<div class="animation-area">
+    <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+{% endblock %}

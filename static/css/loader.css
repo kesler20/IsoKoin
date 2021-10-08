@@ -1,0 +1,112 @@
+.loader {
+    position: relative;
+    height: 100vh;
+    z-index: 100;
+}
+
+.loader p{
+    animation: slide-in-right 1s ease-in-out;
+    padding-top: 80px;
+}
+
+.loader div img {
+    width: 50%;
+}
+
+.loader div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    z-index: 100;
+    pointer-events: all;
+}
+
+.mining {
+    animation: rotatetBackAndForth 2s linear infinite alternate;
+}
+
+.barrell {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    transform: translate(-10%, -10%);
+}
+
+.loader.finished {
+    display: none;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 100;
+}
+
+#preloader img{
+    width: 30%;
+    animation: dance  1.9s linear infinite alternate;
+}
+
+#preloader p {
+    text-align: center;
+    animation: fade-in 1.5s linear infinite alternate;
+}
+
+@keyframes rotatetBackAndForth {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+    
+}
+
+@keyframes fade-out{
+    from{
+    opacity: 1;
+    }
+    to{
+    opacity: 0;
+    }
+}
+
+@keyframes slide-in-right{
+    from{
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    }
+    to{
+    transform: translate3d(0, 0, 0);
+    }
+    };
+
+@keyframes fade-in{
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+    }
+
+@keyframes dance {
+    0%{
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        }
+    25%{
+        transform: translate3d(0, 0, 0);
+        }
+    50%{
+        transform: translateY(100%);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+}

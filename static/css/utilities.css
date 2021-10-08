@@ -1,0 +1,271 @@
+/*-------------------------------- Utilities (these are classes that are used throughtout the website)--------------------------------*/
+
+.container { /* this is because we wrapped the navbar in the container element in the first place */
+    margin: 0 auto;
+    overflow: auto; /* this is used to remove the space that was made by setting all the heading to the 10px , 
+    since there are two headingsa there ois still some white space above the navbar */
+    padding: 0 40px;
+}
+
+.card {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4); /* this will give a little bit of a shadow to the card that will make it looklike its coming of the page a bit */
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background:  var(--primary-color);
+    color: white; /* this refres to the color of the text within the button */
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+
+.btn-outline {
+    background-color: transparent; /*this is the read more button */
+    border: 1px white solid;
+}
+
+/* Background & colored buttons of the cloud section */
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent; /*this is the read more button */
+    border: 1px white solid;
+}
+
+/* This is for the footer */
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a, 
+.btn-secondary a,
+.bg-dark a, 
+.btn-dark a,
+.bg-light a, 
+.btn-light a {
+    color: white;
+}
+
+.flex {
+    display: flex;/* using a flex box on the contaier will make the h1 and the nav 2 columns of the flex box display/ however since we dont want all the containers
+    to have the display class of flex we can create anoyther utility class called  flex */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* of whatever the container of the flex is */
+}
+
+.grid {
+    display: grid; /* just with flex box whne we use the grid class and it turns it into a container and each child element of hte container becom part of hte grid */
+    grid-template-columns: repeat(2, 1fr); /* this is to define how wide we wnat them to be using 2fr 1fr 
+    means that the first one (element of the grid) will take 2 fractions of the entire space and the second one 1 fraction
+    however by using the repeat function we can set both of them at 1fr or grid-template-columns: 1fr 1fr; repeat(number of times,fraction dimension)*/
+    gap: 20px; /* this will add space in between the two grid elements */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*--------------------------------------Alert-------------------*/
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.aler i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.alert-error {
+    background-color: var(--eror-color);
+    color: white;
+}
+
+/* Text sizes */
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {  /*these are the sizes of the texts that you can use as we are developing our framework (protocl) */
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+} 
+
+/* Text colors */
+
+.text-primary {
+    color: var(--primary-color);
+}
+  
+.text-secondary {
+    color: var(--secondary-color);
+}
+  
+.text-dark {
+    color: var(--dark-color);
+}
+  
+.text-light {
+    color: var(--light-color);
+}
+
+/*  Immage */
+img {
+    width: 100%; /* tihs is toi ensure that the images are kept witihin their conytainer and is ot going to bust out of its contaier */
+}
+
+code,
+pre {
+    background: var(--dark-color);
+    color: white;
+    padding: 10px;
+}
+
+
+/*  linklist */
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Margin and Padding that will be used to space the stats section*/
+/* Margin */
+.my-1 {
+    margin: 1rem;
+}
+
+.my-2 {
+    margin: 1.5rem;
+}
+
+.my-3 {
+    margin: 2rem;
+}
+
+.my-4 {
+    margin: 3rem;
+}
+
+.my-5 {
+    margin: 4rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 1.5rem;
+}
+
+.m-3 {
+    margin: 2rem;
+}
+
+.m-4 {
+    margin: 3rem;
+}
+
+.m-5 {
+    margin: 4rem;
+}
+/* Padding */
+.py-1 {
+    padding: 1rem;
+}
+
+.py-2 {
+    padding: 1.5rem;
+}
+
+.py-3 {
+    padding: 2rem;
+}
+
+.py-4 {
+    padding: 3rem;
+}
+
+.py-5 {
+    padding: 4rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 1.5rem;
+}
+
+.p-3 {
+    padding: 2rem;
+}
+
+.p-4 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 4rem;
+}

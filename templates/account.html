@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utilities.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/features.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}" />
+    <!-- Font Awesome link tag copied from cdjs.com -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!-- -------------------------------------------------------->
+    <title>Account Page</title>
+  </head> 
+  <body>
+    <!--- Navbar-->
+    <!--- the navbar is wrapped in a container so that we can control how far will the navbar stretch in dekstop view 
+    </div> -->
+      <!--- Navbar-->
+    <nav>
+      <div class="hamburger">
+        <div class="top line"></div>
+        <div class="midll line"></div>
+        <div class="bottm line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href='../index'>Login</a></li>
+        <li><a href='../blockchain'>Blockchain</a></li>
+        <li><a href='../account'>Account</a></li>
+      </ul>
+    </nav>
+    
+    <div class="animation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    
+        <div class="container account">
+            <section class="user-main">
+                <div class="container container-flex">
+                    <h1>{{ username }}</h1>
+                    <div>
+                        <i class='fa fa-user fa-3x'></i>
+                    </div>
+                    <h4>This is my random bio:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Et minus rerum facilis odit repellendus atque officiis, consequa
+                        tur commodi amet magni nesciunt modi quidem! 
+                        Sit dolor sequi harum vel, id voluptatum?</p>
+                        <form action="#" method="get">
+                            <h3>Account Summay</h3>
+                            <p>Balance:</p>
+                            <h1>{{ balance }} ISK</h1>
+                            <p>Public key: </p>
+                            <h3><input value='{{ public_key }}'/></h3>
+                            <p>Latest transactions: </p>
+                            <p>{{ transactions }}</p>
+                            <p class='to-hide'>Send IsoKoins using the following form:</p>
+                        </form>
+                </div>
+            </section>
+            <section class="transactions-main">
+                <div class="container flex">
+                    <table border="1" class="dataframe">
+                        <thead>
+                            <tr style="text-align: right;">
+                            <th></th>
+                            <th>sender</th>
+                            <th>amt</th>
+                            <th>receiver</th>
+                            <th>time</th>
+                            <th>hash</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th>0</th>
+                            <td>kesler</td>
+                            <td>130</td>
+                            <td>utomi</td>
+                            <td>2021-09-16 17:01:09.341714</td>
+                            <td>20fe0d66db658d6dd9ae73e7354b5dc59f17ba89b75dd491b07298fc3a01e0c0</td>
+                            </tr>
+                            <tr>
+                            <th>1</th>
+                            <td>kesler</td>
+                            <td>130</td>
+                            <td>utomi</td>
+                            <td>2021-09-16 17:01:09.431707</td>
+                            <td>3669f2e0c469f1bfc29b5ccff43b2abea14da56b408b77bba7d8a00e30c17687</td>
+                            </tr>
+                            <tr>
+                            <th>2</th>
+                            <td>kesler</td>
+                            <td>130</td>
+                            <td>utomi</td>
+                            <td>2021-09-16 17:01:09.441707</td>
+                            <td>6e8b9f4d685954db3ef4002592776eb9f2e0e3fb405319ce6abec077f0978ecb</td>
+                            </tr>
+                            <tr>
+                            <th>3</th>
+                            <td>kesler</td>
+                            <td>130</td>
+                            <td>utomi</td>
+                            <td>2021-09-16 17:01:09.451705</td>
+                            <td>4069bc7ea738ed3b355109a2820caade5a81b05290c0a1b09c37867bc41db7d1</td>
+                            </tr><!----->
+
+
+
+
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                    
+
+    <tr>
+    <th>0</th>
+    <td>Utomi</td>
+    <td>123</td>
+    <td>Kesler</td>
+    <td>2021-09-20 00:09:55.697491</td>
+    <td>63cb43baa1d5ec1723b0a45324ec51d179f7bcc9fa61369556ea5d88a9031e77</td>
+    </tr>
+                
+
+    <tr>
+    <th>0</th>
+    <td>Kesler</td>
+    <td>123</td>
+    <td>Utomi</td>
+    <td>2021-09-20 00:07:37.621578</td>
+    <td>443a68f96f5a3abe062da7ce4e6e54bb64a36baec0299f124725b04000144314</td>
+    </tr>
+                
+
+
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>38</td>
+                        <td>utomi</td>
+                        <td>2021-09-17 01:51:49.036351</td>
+                        <td>214864fcbf443d388d45d372f42b3a704b7b3d23125ad98b02d67e1db7a5b1ba</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>66</td>
+                        <td>utomi</td>
+                        <td>2021-09-17 01:51:17.894169</td>
+                        <td>b283cb52974d7deec08607d5f06bba20fce9f5f7bbd06be9b3f0f8683ef92080</td>
+                        </tr>
+                        <tr>
+                        <th>2</th>
+                        <td>utomi</td>
+                        <td>3</td>
+                        <td>kesler</td>
+                        <td>2021-09-16 21:40:16.362228</td>
+                        <td>36300ca5b83c8ffb8fffdf8cb334d9d4c553b85d03e703e6de8758d13d07e775</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>utomi</td>
+                        <td>2</td>
+                        <td>kesler</td>
+                        <td>2021-09-16 21:22:30.730354</td>
+                        <td>938b9e6a49c50b3e0039edb89c90ef648fc5e024375fdc53f62322e3be1556d0</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Utomi</td>
+                        <td>5</td>
+                        <td>Kesler</td>
+                        <td>2021-09-16 20:15:40.397065</td>
+                        <td>a9442f75346c0e284418cf9f03225e6874340a1be75fb9a5b27a58f0aad63f39</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Utomi</td>
+                        <td>4</td>
+                        <td>kesler</td>
+                        <td>2021-09-16 20:15:02.660077</td>
+                        <td>41cc3862142a22d05a7c401f91fc55efe0fd1319ff76c263799f3d77378101dc</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>4</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 20:12:57.944315</td>
+                        <td>81fce7c4b57f0dc363c8cc16fc2a299d6e5752b091ddd356f4cf77f28f8fee51</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>2</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:53:50.833521</td>
+                        <td>4e3e0324ea802f108389c29c23f068bd89deeb2200fa4e185d58e2574ee8a294</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>2</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:53:50.833521</td>
+                        <td>4e3e0324ea802f108389c29c23f068bd89deeb2200fa4e185d58e2574ee8a294</td>
+                        </tr>
+                        <tr>
+                        <th>14</th>
+                        <td>Kesler</td>
+                        <td>129</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:23:22.611833</td>
+                        <td>cc443974c6ca06ad325247c04d69c48e20360fd30d506585b3836951ebbbe880</td>
+                        </tr>
+                        <tr>
+                        <th>14</th>
+                        <td>Kesler</td>
+                        <td>89</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:22:57.583682</td>
+                        <td>b0f686c0a6033ecd2ab076e6285b8a4a0b3a8d299a5e51df2a7ff94995984e61</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>49</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:15:51.844399</td>
+                        <td>e26d949371794f58484842cec85adbdc06bda8a5641fb37dd60641a49fc8574d</td>
+                        </tr>
+                        <tr>
+                        <th>0</th>
+                        <td>Kesler</td>
+                        <td>49</td>
+                        <td>utomi</td>
+                        <td>2021-09-16 19:12:20.553001</td>
+                        <td>ae0bf2f27d91cf9c3513645436cbeabc43a333bb90a2945018058ecae465060d</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    
+                    <form class='account showcase-form card' action="{{ url_for('accounts') }}" method="post" >
+                        <p><input type="text" name='receiver' value='Receiver Name' required></p>
+                        <p><input type="number" name='amt' value='ammount' required></p>
+                        <p><input class="btn btn-outline" type="submit" value='Pay'></p>
+                    </form>
+                </div>
+            </section>
+            <div class="transaction-summary">    
+                <hr/>
+                <h3>Transaction Summary:</h3>
+                <h3>{{summary}}</h3>
+                <form action="{{ url_for('blockchains') }}" method="get"><input class="btn btn-outline" id='account-mine' type="submit" value='Mine'></input></form>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer bg-dark py-5">
+          <div class="container grid grid-3">
+            <div>
+              <h1>ISK</h1>
+              <p>Copyright &copy; 2021</p>
+            </div>
+            <div>
+            </div>
+            <!-- the navlinks at the footer
+            -->
+            <div class="social">
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+          </div>
+    </div>
+    </footer>
+    <!-- scripts -->
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lib/particles.min.js') }}"></script>
+  </body>
+</html>

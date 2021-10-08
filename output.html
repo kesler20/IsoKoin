@@ -1,0 +1,668 @@
+{% extends 'base.html' %}
+{% block title %}Blockchains Page{% endblock %}
+{% block content %}
+    <div class="loader">
+        <div>
+            <img class="barrell" src="{{ url_for('static', filename='img/R.png')}}" alt="barrell" srcset="">
+            <img class="mining" src="{{ url_for('static', filename='img/R1.png')}}" alt="mining" srcset="">
+            <p>building the chain ...</p>
+        </div>
+    </div>
+    <!---Head area -->
+    <section class="features-head bg-primary py-3"> <!---we can use the utility classes on other pages as well-->
+        <div class="container grid">
+            <div class='text'>
+                <h1 class="xl">Blockchain</h1>
+                <p class="lead">Check out the blockchain workflow demostration on the ISK platform</p>
+            </div>
+            <img src="{{ url_for('static', filename='img/server.png') }}" alt="image of a server">
+        </div>
+    </section>
+
+    <!---Sub Head-->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">The ISK Platform</h1>
+                <p>the ISK platform or IsoKoin platform is the blockchain where IsoKoins are currently running on untill the decentralised 
+                    application powered by ISKs will be deployed in the Ethereum blockchain.</p>
+            </div>
+            <img src="{{ url_for('static', filename='img/server2.png') }}" alt="another image of a server">
+        </div>
+    </section>
+    
+    <!---Features Main-->
+    <section class="features-main my-2">
+        <div class="container grid blockchain">
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: {{_hash}}</p>
+                <p>Nonse: 0</p>
+                <p>Previous Hash: None</p>
+                <p>Time: {{timestamp}}</p>
+                <a href="{{ url_for('static', filename='../view_transactions') }}" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i><!---for viewing the transactions oben up a preview of the transactions by passing the {{transactions}} variable-->
+            </div><!--THIS-->
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 006a5868b52ac338305fbe3d084c86c5f3efdc7b734576800ba70fa997e2d51b</p>
+                <p>Nonse: 444</p>
+                <p>Previous Hash: fae1d16d4d7618aefcaa7a1b4e8fd0ede390301b19313484f7d8be11ed7c5b99</p>
+                <p>Time: 2021-09-30 23:41:30.266805</p>
+                <a href="{ url_for('static', filename='../docs') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 006a5868b52ac338305fbe3d084c86c5f3efdc7b734576800ba70fa997e2d51b</p>
+                <p>Nonse: 444</p>
+                <p>Previous Hash: fae1d16d4d7618aefcaa7a1b4e8fd0ede390301b19313484f7d8be11ed7c5b99</p>
+                <p>Time: 2021-09-30 23:41:30.266805</p>
+                <a href="{ url_for('static', filename='../docs') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 006a5868b52ac338305fbe3d084c86c5f3efdc7b734576800ba70fa997e2d51b</p>
+                <p>Nonse: 444</p>
+                <p>Previous Hash: fae1d16d4d7618aefcaa7a1b4e8fd0ede390301b19313484f7d8be11ed7c5b99</p>
+                <p>Time: 2021-09-30 23:41:30.266805</p>
+                <a href="{ url_for('static', filename='../docs') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 006a5868b52ac338305fbe3d084c86c5f3efdc7b734576800ba70fa997e2d51b</p>
+                <p>Nonse: 444</p>
+                <p>Previous Hash: fae1d16d4d7618aefcaa7a1b4e8fd0ede390301b19313484f7d8be11ed7c5b99</p>
+                <p>Time: 2021-09-30 23:41:30.266805</p>
+                <a href="{ url_for('static', filename='../docs') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 006a5868b52ac338305fbe3d084c86c5f3efdc7b734576800ba70fa997e2d51b</p>
+                <p>Nonse: 444</p>
+                <p>Previous Hash: fae1d16d4d7618aefcaa7a1b4e8fd0ede390301b19313484f7d8be11ed7c5b99</p>
+                <p>Time: 2021-09-30 23:41:30.266805</p>
+                <a href="{ url_for('static', filename='../docs') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00e4046ea1f079001963a1f8d1c09be01c4dda2ca7c7d738c7b0834576c105a0</p>
+                <p>Nonse: 170</p>
+                <p>Previous Hash: 17dee6f1ff8528af66834e6b7e38ed030faf929b03a561038622b4374c465383</p>
+                <p>Time: 2021-09-20 14:13:20.067605</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00e4046ea1f079001963a1f8d1c09be01c4dda2ca7c7d738c7b0834576c105a0</p>
+                <p>Nonse: 170</p>
+                <p>Previous Hash: 17dee6f1ff8528af66834e6b7e38ed030faf929b03a561038622b4374c465383</p>
+                <p>Time: 2021-09-20 14:13:20.067605</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00e4046ea1f079001963a1f8d1c09be01c4dda2ca7c7d738c7b0834576c105a0</p>
+                <p>Nonse: 170</p>
+                <p>Previous Hash: 17dee6f1ff8528af66834e6b7e38ed030faf929b03a561038622b4374c465383</p>
+                <p>Time: 2021-09-20 14:13:20.067605</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 14</p>
+                <p>Hash: 005c9c805fd67c61a9df57dd112f3991d03254136d22a9e742f4a4fcf3cb4f60</p>
+                <p>Nonse: 137</p>
+                <p>Previous Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Time: 2021-09-20 13:01:39.261733</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 13</p>
+                <p>Hash: 008fc886883b06d69bce660d9958054db7fb1ccfae2b8de7542921ba29c2a25c</p>
+                <p>Nonse: 253</p>
+                <p>Previous Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Time: 2021-09-20 13:00:42.976183</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0038260e4e81921dc19f417457b3b3b93ea88dee11eb98ef2e4c143d8708205e</p>
+                <p>Nonse: 496</p>
+                <p>Previous Hash: 90ab1e40e40f9742c1de07fa29fe3eac9579d538468674cdd89e1e2c0cabf67d</p>
+                <p>Time: 2021-09-20 12:17:44.541179</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00a5fb88349c5f2f7e49b9ffa8523117cf721c4027506f57b3463de53a696942</p>
+                <p>Nonse: 398</p>
+                <p>Previous Hash: 85d08472c1f48c4eb0283cec09a2f0e0176a2dd5b31c27cc172058462521aea6</p>
+                <p>Time: 2021-09-20 00:11:48.929115</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00a5fb88349c5f2f7e49b9ffa8523117cf721c4027506f57b3463de53a696942</p>
+                <p>Nonse: 398</p>
+                <p>Previous Hash: 85d08472c1f48c4eb0283cec09a2f0e0176a2dd5b31c27cc172058462521aea6</p>
+                <p>Time: 2021-09-20 00:11:48.929115</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00a5fb88349c5f2f7e49b9ffa8523117cf721c4027506f57b3463de53a696942</p>
+                <p>Nonse: 398</p>
+                <p>Previous Hash: 85d08472c1f48c4eb0283cec09a2f0e0176a2dd5b31c27cc172058462521aea6</p>
+                <p>Time: 2021-09-20 00:11:48.929115</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00a5fb88349c5f2f7e49b9ffa8523117cf721c4027506f57b3463de53a696942</p>
+                <p>Nonse: 398</p>
+                <p>Previous Hash: 85d08472c1f48c4eb0283cec09a2f0e0176a2dd5b31c27cc172058462521aea6</p>
+                <p>Time: 2021-09-20 00:11:48.929115</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00ccb35f7eaaa8c6ddfc6b67a58a6769b856e5c4fb653a16824ea52828d685f9</p>
+                <p>Nonse: 130</p>
+                <p>Previous Hash: 3aa5bf09ada01ea47c02c3d5211cb007b6e9a381ba07f8287e2b23bd5c5f8cb1</p>
+                <p>Time: 2021-09-17 12:45:40.795271</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00ccb35f7eaaa8c6ddfc6b67a58a6769b856e5c4fb653a16824ea52828d685f9</p>
+                <p>Nonse: 130</p>
+                <p>Previous Hash: 3aa5bf09ada01ea47c02c3d5211cb007b6e9a381ba07f8287e2b23bd5c5f8cb1</p>
+                <p>Time: 2021-09-17 12:45:40.795271</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 9</p>
+                <p>Hash: 00ebe175d269a5f0944cf504232452fd76975d2552dc5721bb009c6c361144fe</p>
+                <p>Nonse: 252</p>
+                <p>Previous Hash: 0008661c544da49fdcd4cf00b4c79778307ac128579979baa9be153589868014</p>
+                <p>Time: 2021-09-17 02:01:41.402028</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 8</p>
+                <p>Hash: 0008661c544da49fdcd4cf00b4c79778307ac128579979baa9be153589868014</p>
+                <p>Nonse: 16</p>
+                <p>Previous Hash: 0097f33d14b93cfdd1acc8c6becda9717622160c940798472be066191854e2d3</p>
+                <p>Time: 2021-09-17 01:58:54.623258</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 8</p>
+                <p>Hash: 0008661c544da49fdcd4cf00b4c79778307ac128579979baa9be153589868014</p>
+                <p>Nonse: 16</p>
+                <p>Previous Hash: 0097f33d14b93cfdd1acc8c6becda9717622160c940798472be066191854e2d3</p>
+                <p>Time: 2021-09-17 01:58:54.623258</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 7</p>
+                <p>Hash: 0097f33d14b93cfdd1acc8c6becda9717622160c940798472be066191854e2d3</p>
+                <p>Nonse: 266</p>
+                <p>Previous Hash: 005e2c152f1d8d760ef95fb8510ae7c1557e7079d156843602aa33d0a78829f2</p>
+                <p>Time: 2021-09-17 01:58:23.383329</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 6</p>
+                <p>Hash: 005e2c152f1d8d760ef95fb8510ae7c1557e7079d156843602aa33d0a78829f2</p>
+                <p>Nonse: 286</p>
+                <p>Previous Hash: 0001f06886778e3a90a6d510da8fc42bce20c9b2e3c7b7d489dabc72ce4a6813</p>
+                <p>Time: 2021-09-17 01:57:53.917554</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 0001f06886778e3a90a6d510da8fc42bce20c9b2e3c7b7d489dabc72ce4a6813</p>
+                <p>Nonse: 146</p>
+                <p>Previous Hash: 364dc23ceef4f4fe96f2b6b8b7250ba0f884a97bc6a3401d3046e1a14a25ef8f</p>
+                <p>Time: 2021-09-17 01:57:14.785678</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00b09d26e6032a9504a130951bf315bd80cf969116060a7ec2f6171a9f57d0dd</p>
+                <p>Nonse: 242</p>
+                <p>Previous Hash: 01c992f0bc515606fe3490318a9c0549f1a457265f9d6c99892c8d9c38659477</p>
+                <p>Time: 2021-09-16 21:34:29.324251</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00b09d26e6032a9504a130951bf315bd80cf969116060a7ec2f6171a9f57d0dd</p>
+                <p>Nonse: 242</p>
+                <p>Previous Hash: 01c992f0bc515606fe3490318a9c0549f1a457265f9d6c99892c8d9c38659477</p>
+                <p>Time: 2021-09-16 21:34:29.324251</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Block: 0</p>
+                <p>Hash: 00b09d26e6032a9504a130951bf315bd80cf969116060a7ec2f6171a9f57d0dd</p>
+                <p>Nonse: 242</p>
+                <p>Previous Hash: 01c992f0bc515606fe3490318a9c0549f1a457265f9d6c99892c8d9c38659477</p>
+                <p>Time: 2021-09-16 21:34:29.324251</p>
+                <a href="{ url_for('static', filename='../view_transactions') }" class="btn btn-outline">View Transactions</a>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+            
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+            <div class="card flex">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero nesciunt adipisci repellendus, 
+                    reiciendis temporibus, ab eos quo ratione omnis fugit, deserunt eveniet consequatur magnam recusandae neque quis ipsa dolorum!</p>
+                <i class="fas fa-database fa-3x"></i>
+            </div>
+
+        </div>
+    </section>
+    <!--- Other interesting icons include fas fa-power-off fa-3x where fa-3x refers to the font awesome size there are also fa-upload and fa-laptop-code-->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Mine new blocks</h1>
+                <p>New blocks are mined in the same way that blocks in other
+                    blockchains such as the Bitcoin blockchain are mined. This involves 
+                    implementing an hashing algorithm that attempts to find a hash with pre-specified requirements</p>
+                <form action="#" method="post"><input id='mine' class="btn btn-outline" type='submit' value='Mine'/></form>
+            </div>
+            <img id="mining-icon" src="{{ url_for('static', filename='img/download.jpg') }}" alt="mining icon">
+        </div>
+    </section>
+
+{% endblock %}
+{{transactions}}

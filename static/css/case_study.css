@@ -1,0 +1,90 @@
+.use-case-main {
+    color:black;
+    height: 60vh;
+}
+
+.use-case-main img {
+    width: 450px;
+}
+
+.use-case-main .btn {
+    color: black;
+    border-color: black;
+}
+
+.use-case-main .btn:hover, .use-case-main .btn:focus {
+    background-image: linear-gradient(45deg, white, rgb(1, 255, 44));
+}
+
+.democracy .container {
+    height: auto;
+    overflow: auto;
+}
+
+.use-case-head {
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg,  var(--dark-color), var(--primary-color));
+}
+
+.image-divider {
+    display: none;
+}
+
+.exchange {
+    color: white;
+}
+
+.exchange .btn {
+    border-color: white;
+    color: white;
+}
+
+.feedback-comment {
+    height: 450px;
+}
+
+.feedback .btn {
+    width: 100px;
+}
+
+@media (max-width:768px) {
+    .use-case-main img {
+        width: 50%;
+    }
+
+    .use-case-main .container {
+        overflow: auto;
+    }
+
+    .image-divider {
+        display: flex;
+    }
+
+    .use-case-main {
+        height: 100vh;
+    }
+
+    .pharma img {
+        display: none;
+    }
+    
+    .use-case-comment {
+        overflow: hidden;
+    }
+
+    .use-case-comment .btn{
+        margin-top: 15px;
+    }
+
+    .use-case-main.democracy,
+    .use-case-main.exchange {
+        height: 130vh;
+    }
+}
+
+@media (min-width:500px) {
+    .feedback-comment {
+        width: 500px;
+    }
+}
