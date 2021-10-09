@@ -4,7 +4,7 @@ alabaster==0.7.12
 alpaca-trade-api==0.53.0
 alpha-vantage==2.3.1
 altgraph==0.17
-anaconda-client==1.7.2
+anaconda-client==1.2.2
 anaconda-navigator==1.10.0
 anaconda-project==0.8.3
 ansicon==1.89.0
