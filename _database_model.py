@@ -15,7 +15,7 @@ app = Flask(
     __name__, 
     template_folder='templates',
     static_folder='static'
-)static
+)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///isokoin.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
