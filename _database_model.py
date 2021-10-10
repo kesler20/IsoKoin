@@ -8,11 +8,6 @@ from sqlalchemy.orm import relationship
 from flask_sqlalchemy import BaseQuery, SQLAlchemy
 import datetime
 import rsa
-import selenium
-import threading 
-from selenium import webdriver as wb
-import time as tm
-import pandas as pd 
 
 create_engine("mysql+pymysql://isokoin:pw@host/db", pool_pre_ping=True)
 ROOT_DIR = os.path.dirname(os.getcwd())
@@ -243,17 +238,6 @@ def update_user_balance(sender, ammount):
     print('updating balance of: ',user)
     db.session.commit()
     return user
-
-def initialize_web_app():
-    try:
-        x = ps.abspath('msedgedriver.exe')
-        driver = wb.Edge(x)
-        driver.get('http://127.0.0.1:5500/')
-        tm.sleep(1000)
-    except selenium.common.exceptions.WebDriverException as err:
-        print(err)
-        print('number of threads running:',threading.active_count())
-   
 
 def generate_block_number():
     _index = textfile_i_o('block_index.txt','', False)

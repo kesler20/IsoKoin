@@ -1,7 +1,6 @@
 from mining_crypto import mine_pending_transactions
 import json
-import hashlib
-import time  
+import hashlib 
 from _database_model import *
 import datetime
 
