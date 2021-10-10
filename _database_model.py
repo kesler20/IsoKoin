@@ -13,9 +13,9 @@ create_engine("mysql+pymysql://isokoin:pw@host/db", pool_pre_ping=True)
 ROOT_DIR = os.path.dirname(os.getcwd())
 app = Flask(
     __name__, 
-    template_folder=ps.join(ROOT_DIR,'IsoKoin', 'templates'),
-    static_folder=ps.join(ROOT_DIR,'IsoKoin', 'static')
-)
+    template_folder='templates',
+    static_folder='static'
+)static
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///isokoin.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
