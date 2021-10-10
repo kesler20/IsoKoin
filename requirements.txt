@@ -1,4 +1,3 @@
-certifi==2021.5.30
 cffi @ file:///C:/ci/cffi_1625831756778/work
 click @ file:///tmp/build/80754af9/click_1621604852318/work
 colorama==0.4.4
