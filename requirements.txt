@@ -4,12 +4,6 @@ alabaster==0.7.12
 altgraph==0.17
 ansicon==1.89.0
 appdirs==1.4.4
-argh==0.26.2
-conda==4.10.3
-conda-build==3.20.5
-conda-package-handling @ file:///C:/ci/conda-package-handling_1603003327818/work
-conda-verify==3.4.2
-contextlib2==0.6.0.post1
 cryptography @ file:///C:/ci/cryptography_1601046905460/work
 filelock==3.0.12
 flake8 @ file:///tmp/build/80754af9/flake8_1601911421857/work
