@@ -7,6 +7,11 @@
     width: 450px;
 }
 
+.use-case-head .xl {
+    font-size: 2.4rem;
+    word-break: keep-all;
+}
+
 .use-case-main .btn {
     color: black;
     border-color: black;

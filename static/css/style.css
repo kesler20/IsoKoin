@@ -260,9 +260,12 @@ canvas {
 /* ------------------------------------------------------SOURCE CODE ------------------------*/
 
 .how-it-works, 
-.how-it-works-main, 
 .how-it-works-head {
     height: 60vh;
+}
+
+.how-it-works-main {
+    height: 110vh;
 }
 
 .how-it-works-head .btn {
@@ -524,10 +527,14 @@ canvas {
         font-size: 0.8rem;
     }
 
-    .how-it-works {
-        height: 90vh;
+    .how-it-works, .how-it-works-head {
+        height: 110vh;
     }
 
+    .cloud .text-center .lg {
+        font-size: 2rem;
+        word-break: keep-all;
+    }
 }
 
 @media (max-width:1300px) {
