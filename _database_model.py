@@ -134,7 +134,8 @@ class FileUpdateSystem(File):
         
     # find a way to append the tables int the destianation files
     def append_table(self, blockchain, section_to_target):
-        filename = r'templates\account.html'
+        filename = os.path.join('templates','account.html')
+        print(filename)
         try:
             self.generate_table(blockchain)
         except UnboundLocalError:
@@ -164,7 +165,8 @@ class FileUpdateSystem(File):
 
     def update_block_list(self, _blockchain, section_to_target):
         output_updated = False
-        filename = r'templates\blockchain.html'
+        filename = os.path.join('templates','blockchain.html')
+        print(filename)
         for block in _blockchain.chain:
             new_block = f'''
             <div class="card flex">
