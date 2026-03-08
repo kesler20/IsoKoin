@@ -1,4 +1,5 @@
-from flask import redirect, url_for, render_template, request, session, flash
+from flask import redirect, url_for, render_template, request, session, flash, abort
+from jinja2 import TemplateNotFound
 from _database_model import *
 from blockchain import *
 from datetime import datetime
@@ -201,6 +202,13 @@ def view_transactions():
 def home():
     return render_template('index.html')
 
+@app.route('/robots.txt')
+def robots():
+    return app.response_class(
+        'User-agent: *\nDisallow: /account/\nDisallow: /login/\nDisallow: /mine/\nDisallow: /blockchain/\nDisallow: /poll/\n',
+        mimetype='text/plain'
+    )
+
 @app.route('/<page>/', methods=['POST','GET'])
 def show(page):
     if page == 'login':
@@ -219,7 +227,10 @@ def show(page):
         redirect(url_for('blockchains'))
     else:
         pass
-    return render_template(f'{page}.html')
+    try:
+        return render_template(f'{page}.html')
+    except TemplateNotFound:
+        abort(404)
 
 if __name__ == '__main__':
     _blockchain.addGenesisBlock()
